@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/cvpr2026/favicon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Press Release – CVPR 2026 Compute Report</title>
+  <meta name="description" content="CVPR 2026 Compute Report: Accepted Papers Use Twice the GPUs of Rejected Ones, H100s Remain a Minority."/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #333;
+      background: #f5f7fa;
+    }
+
+    /* ── Site header (matches dashboard) ─────────────────── */
+    .site-header {
+      background: #1565C0;
+      color: #fff;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    }
+    .site-header .brand {
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      text-decoration: none;
+      color: #fff;
+    }
+    .site-header nav a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      font-size: .88rem;
+      margin-left: 1.5rem;
+      transition: color .15s;
+    }
+    .site-header nav a:hover { color: #fff; }
+    .site-header nav a.active {
+      color: #fff;
+      border-bottom: 2px solid rgba(255,255,255,.7);
+      padding-bottom: 2px;
+    }
+
+    /* ── Page layout ──────────────────────────────────────── */
+    .page {
+      max-width: 760px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Release meta ─────────────────────────────────────── */
+    .release-meta {
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      color: #1565C0;
+      text-transform: uppercase;
+      margin-bottom: .25rem;
+    }
+    .release-date {
+      font-size: .82rem;
+      color: #777;
+      margin-bottom: 1.75rem;
+    }
+
+    /* ── Headline & deck ──────────────────────────────────── */
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #1565C0;
+      margin-bottom: .75rem;
+    }
+    .deck {
+      font-size: 1.05rem;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      border-left: 3px solid #1565C0;
+      padding-left: 1rem;
+      line-height: 1.55;
+    }
+    .rule {
+      border: none;
+      border-top: 2px solid #1565C0;
+      margin: 1.75rem 0;
+    }
+
+    /* ── Body text ────────────────────────────────────────── */
+    p { margin-bottom: 1rem; }
+
+    /* ── Section headings ─────────────────────────────────── */
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1565C0;
+      margin: 2rem 0 .6rem;
+    }
+    h3 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: #1565C0;
+      margin: 1.75rem 0 .5rem;
+    }
+
+    /* ── Stat tables ──────────────────────────────────────── */
+    .stat-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+      margin: .75rem 0 1.25rem;
+    }
+    .stat-table td {
+      padding: .45rem .75rem;
+      border: 1px solid #dde3ee;
+    }
+    .stat-table tr:nth-child(odd)  td { background: #eef2fb; }
+    .stat-table tr:nth-child(even) td { background: #fff; }
+    .stat-table td:first-child { color: #555; }
+    .stat-table td:last-child  { font-weight: 600; color: #222; }
+    .stat-table thead td {
+      background: #1565C0 !important;
+      color: #fff !important;
+      font-weight: 700;
+    }
+
+    /* ── About box ────────────────────────────────────────── */
+    .about {
+      background: #eef2fb;
+      border-left: 4px solid #1565C0;
+      padding: 1rem 1.25rem;
+      font-size: .9rem;
+      margin-top: 2rem;
+      border-radius: 0 6px 6px 0;
+    }
+    .about p { margin: 0; }
+
+    /* ── End mark ─────────────────────────────────────────── */
+    .endmark {
+      text-align: center;
+      font-weight: 700;
+      font-size: .9rem;
+      color: #999;
+      letter-spacing: .25em;
+      margin-top: 2rem;
+    }
+
+    /* ── Footer ───────────────────────────────────────────── */
+    .site-footer {
+      text-align: center;
+      font-size: .78rem;
+      color: #999;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #dde3ee;
+      background: #f5f7fa;
+    }
+    .site-footer a { color: #1565C0; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="/cvpr2026/">CVPR 2026 Compute Report</a>
+  <nav>
+    <a href="/cvpr2026/">Dashboard</a>
+    <a href="/cvpr2026/press.html" class="active">Press Release</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <p class="release-meta">Press Release &nbsp;·&nbsp; For Immediate Release</p>
+  <p class="release-date">June 2026</p>
+
+  <h1>CVPR 2026 Compute Report: Accepted Papers Use Twice the GPUs of Rejected Ones, H100s Remain a Minority</h1>
+
+  <p class="deck">First large-scale compute analysis of a major computer vision conference reveals sharp hardware divides, geographic concentration, and a modest but consistent compute-acceptance link.</p>
+
+  <hr class="rule"/>
+
+  <p>
+    <strong>The Compute Report Initiative</strong> today released the first comprehensive analysis of
+    computational resources reported by researchers submitting to <strong>CVPR 2026</strong>, one of
+    the world's largest and most competitive computer vision conferences. Drawing on mandatory compute
+    disclosure forms submitted by <strong>16,034 papers</strong> across all decision outcomes, the
+    report maps the hardware landscape of modern AI research with unprecedented breadth.
+  </p>
+
+  <!-- ── Submission Overview ── -->
+  <h2>Submission Overview</h2>
+  <p>CVPR 2026 received submissions from researchers across 69 countries. Of those with compute form data:</p>
+
+  <table class="stat-table">
+    <tr><td>Total papers analyzed</td>         <td>16,034</td></tr>
+    <tr><td>Accepted (oral + poster)</td>       <td>3,985 (25.3% acceptance rate)</td></tr>
+    <tr><td>Accepted + Findings</td>            <td>5,448 (34.6% combined)</td></tr>
+    <tr><td>Rejected</td>                        <td>6,162</td></tr>
+    <tr><td>Withdrawn</td>                       <td>4,139</td></tr>
+  </table>
+
+  <!-- ── Compute & Acceptance ── -->
+  <h2>More Compute, Higher Acceptance: But Not the Whole Story</h2>
+  <p>
+    Accepted papers reported a median of <strong>4 GPUs and 2,000 development hours</strong>,
+    compared to just <strong>2 GPUs and 1,518 hours</strong> for rejected papers, a 2&times; GPU
+    advantage and 32% more development time. GPU memory tells a similar story: accepted papers
+    reported a median of 48&nbsp;GB versus 40&nbsp;GB for rejections.
+  </p>
+
+  <table class="stat-table">
+    <thead><tr><td></td><td>Accepted&nbsp;&nbsp;&nbsp;&nbsp;Rejected</td></tr></thead>
+    <tr><td>Median GPUs</td>                    <td>4.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.0</td></tr>
+    <tr><td>Median GPU memory</td>              <td>48 GB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40 GB</td></tr>
+    <tr><td>Median development compute</td>     <td>2,000 hrs&nbsp;&nbsp;&nbsp;&nbsp;1,518 hrs</td></tr>
+    <tr><td>Median dev/training multiplier</td> <td>3.7&times;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.6&times;</td></tr>
+    <tr><td>Median project duration</td>        <td>7.0 months&nbsp;&nbsp;7.0 months</td></tr>
+  </table>
+
+  <p>
+    Notably, the dev/training multiplier (total development compute relative to final training
+    compute) and project duration are nearly identical across outcomes, suggesting that
+    <em>research process efficiency, not just scale, distinguishes accepted work.</em>
+  </p>
+
+  <!-- ── GPU Tiers ── -->
+  <h2>H100s Are the Exception, Not the Rule</h2>
+  <p>
+    Despite the narrative around frontier AI hardware, only <strong>11.6% of papers</strong>
+    reported using H100 or H200 GPUs. The majority of CVPR 2026 research ran on prosumer and
+    workstation-class hardware:
+  </p>
+
+  <table class="stat-table">
+    <tr><td>Prosumer / Workstation (RTX 4090, A6000&hellip;)</td> <td>34.6%</td></tr>
+    <tr><td>NVIDIA A100</td>                                        <td>28.4%</td></tr>
+    <tr><td>Mid-high (RTX 3090, V100&hellip;)</td>                 <td>17.2%</td></tr>
+    <tr><td>H100 / H200</td>                                        <td>11.6%</td></tr>
+    <tr><td>Entry / Mid (RTX 3080, T4&hellip;)</td>                <td>3.2%</td></tr>
+    <tr><td>Other / unclassified</td>                               <td>5.0%</td></tr>
+  </table>
+
+  <p>
+    On infrastructure, over half of accepted papers used
+    <strong>institution-owned on-premises hardware (49.9%)</strong>, followed by shared academic
+    clusters (27.9%) and commercial cloud (19.2%). The high on-premises share underscores continued
+    reliance on institutional compute rather than cloud providers.
+  </p>
+
+  <!-- ── Geography ── -->
+  <h2>Geographic Concentration: China and the Long Tail</h2>
+  <p>
+    <strong>China accounts for 53.3% of all submissions</strong> (8,552 papers), more than the rest
+    of the top 10 countries combined. The United States follows at 13.6% (2,185 papers) and South
+    Korea at 6.1% (972). Submissions span 69 countries, though the distribution is heavily
+    concentrated.
+  </p>
+
+  <table class="stat-table">
+    <tr><td>China</td>          <td>8,552 papers, 25.0% acceptance rate</td></tr>
+    <tr><td>United States</td>  <td>2,185 papers, 27.1% acceptance rate</td></tr>
+    <tr><td>South Korea</td>    <td>972 papers, 25.7% acceptance rate</td></tr>
+    <tr><td>Hong Kong</td>      <td>394 papers, 33.2% acceptance rate</td></tr>
+    <tr><td>Singapore</td>      <td>381 papers, 27.3% acceptance rate</td></tr>
+    <tr><td>United Kingdom</td> <td>350 papers, 26.0% acceptance rate</td></tr>
+    <tr><td>Germany</td>        <td>340 papers, 29.4% acceptance rate</td></tr>
+  </table>
+
+  <p>
+    Acceptance rates are broadly similar across the top submitting nations, ranging from 24&ndash;34%,
+    suggesting that peer review outcomes are not systematically skewed by geography among
+    high-volume countries.
+  </p>
+
+  <hr class="rule"/>
+
+  <!-- ── About ── -->
+  <div class="about">
+    <h3 style="margin-top:0;">About the Compute Report Initiative</h3>
+    <p>
+      The <strong>Compute Report Initiative</strong> is an independent effort to bring transparency
+      to the computational resources underlying modern AI research. The full interactive dashboard
+      (geographic maps, per-country breakdowns, and GPU tier analyses) is publicly available at
+      <a href="https://computereport.github.io/cvpr2026">computereport.github.io/cvpr2026</a>.
+    </p>
+  </div>
+
+  <p class="endmark">###</p>
+
+</main>
+
+<footer class="site-footer">
+  <a href="/cvpr2026/">CVPR 2026 Compute Report</a> &nbsp;&middot;&nbsp;
+  Compute Report Initiative &nbsp;&middot;&nbsp;
+  <a href="/cvpr2026/press.html">Press Release</a>
+</footer>
+
+</body>
+</html>
